@@ -18,8 +18,7 @@ let finalMessage = "";
 const randJobMonths = (jobMonths) => {
   let num = Math.floor(Math.random() * jobMonths.length);
   finalMessage =
-    finalMessage +
-    `Hi! Aman you will get a job after ${jobCompany[num]} month `;
+    finalMessage + `Hi! Aman you will get a job after ${jobMonths[num]} month `;
 };
 const randJobCompany = (jobCompany) => {
   let num = Math.floor(Math.random() * jobCompany.length);
@@ -33,3 +32,10 @@ const randJobSalary = (jobSalary) => {
   let num = Math.floor(Math.random() * jobSalary.length);
   finalMessage = finalMessage + `at ${jobSalary[num]}k/year.`;
 };
+
+randJobMonths(jobMonths);
+randJobCompany(jobCompany);
+randJobRole(jobRole);
+randJobSalary(jobSalary);
+
+console.log(finalMessage);
