@@ -10,3 +10,6 @@ const jobRole = [
   "Data Analyst",
 ];
 const jobSalary = [100, 105, 70, 150, 70];
+
+// final output message
+let finalMessage = "";
